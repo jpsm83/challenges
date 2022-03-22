@@ -2,7 +2,7 @@
 
 function longestWord(str) {
     let words = str.split(' ');
-    let max = '';
+    let max = "";
     for (let word of words) {
         if (word.length>max.length) {
             max = word;

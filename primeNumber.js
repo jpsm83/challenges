@@ -29,6 +29,7 @@ function primeNum(n) {
     return true
 }*/
 
+console.log(Math.sqrt(49)) // 7
 console.log(primeNum(8)); //false
 console.log(primeNum(11)); //true
 console.log(primeNum(121)); //false

@@ -9,3 +9,5 @@ function isPalindrome(str) {
 console.log(isPalindrome('Was it a car or a cat I saw'));
 console.log(isPalindrome('Red -rum-, sir,-is-murder'));
 console.log(isPalindrome('I got up early this morning'));
+
+console.log(('Red -rum-, sir,-is-murder').match(/[a-z]+/ig)) // regex to get only letters

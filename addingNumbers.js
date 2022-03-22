@@ -1,15 +1,17 @@
 /*console the total of adding all the
 numbers from 0 till the given number*/
 
-function addingNum(num){
-    let total = 0;
-    for (let i=1; i<=num; i++){
+
+const addingNum = (num) => {
+    total = 0;
+    for(let i=0; i<=num; i++){
         total += i;
     }
     return total;
 }
 
 //same function in a recursive way
+// recursive is a function that calls itself
 function addingNumRecursive(n, total = 0){
     if (n<=0){
         return total;

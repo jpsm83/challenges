@@ -18,4 +18,4 @@ function countDownRecursion(n){
     console.log(n);
     countDownRecursion(n-1);
 }
-countDownRecursion(5); //1  2  3  4  5  horray
+countDownRecursion(5); // 5 4 3 2 1 horray

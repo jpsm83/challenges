@@ -11,7 +11,7 @@ function arrSum(arr) {
     let arrOrder = arr.sort((a,b)=> a - b);
     let bigNum = arrOrder.pop(); // pop() mutates the original arr
     let number = 0;
-    arrOrder.forEach(numArr => (number += numArr));
+    arrOrder.forEach(numArr => number += numArr);
     return bigNum === number;
 }
 

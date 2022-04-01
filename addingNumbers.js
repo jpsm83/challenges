@@ -1,7 +1,6 @@
 /*console the total of adding all the
 numbers from 0 till the given number*/
 
-
 const addingNum = (num) => {
     total = 0;
     for(let i=0; i<=num; i++){

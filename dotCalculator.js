@@ -5,19 +5,23 @@
 // If the result is 0, return the empty string.
 // When it comes to subtraction, the first number will always be greater than or equal to the second number.
 
-function dotCalculator (equation) {
-    const separeEquation = equation.split(" ")
-    const calculateEquation = eval(`${separeEquation[0].length} ${separeEquation[1]} ${separeEquation[2].length}`.replace("//", "/"))
-    // return Array(calculateEquation + 1).join(".")
-    return ".".repeat(calculateEquation)
+function dotCalculator(equation) {
+  const separeEquation = equation.split(" ");
+  const calculateEquation = eval(
+    `${separeEquation[0].length} ${separeEquation[1]} ${separeEquation[2].length}`.replace(
+      "//",
+      "/"
+    )
+  );
+  return ".".repeat(calculateEquation);
 }
 
-console.log(dotCalculator("..... + ...............")) // "...................."
-console.log(dotCalculator("..... - ...")) // ".."
-console.log(dotCalculator("..... - .")) // "...."
-console.log(dotCalculator("..... * ...")) // "..............."
-console.log(dotCalculator("..... * ..")) // ".........."
-console.log(dotCalculator("..... // ..")) // ".."
-console.log(dotCalculator("..... // .")) // "....."
-console.log(dotCalculator(". // ..")) //""
-console.log(dotCalculator(".. - ..")) //""
+console.log(dotCalculator("..... + ...............")); // "...................."
+console.log(dotCalculator("..... - ...")); // ".."
+console.log(dotCalculator("..... - .")); // "...."
+console.log(dotCalculator("..... * ...")); // "..............."
+console.log(dotCalculator("..... * ..")); // ".........."
+console.log(dotCalculator("..... // ..")); // ".."
+console.log(dotCalculator("..... // .")); // "....."
+console.log(dotCalculator(". // ..")); //""
+console.log(dotCalculator(".. - ..")); //""
